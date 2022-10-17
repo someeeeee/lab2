@@ -50,9 +50,9 @@ void shell(int* items, int count)
 	}
 }
 
-int compare(const void * x1, const void * x2)   // функциясравненияэлементовмассива
+int compare(const void * x1, const void * x2)   // ГґГіГ­ГЄГ¶ГЁГїГ±Г°Г ГўГ­ГҐГ­ГЁГїГЅГ«ГҐГ¬ГҐГ­ГІГ®ГўГ¬Г Г±Г±ГЁГўГ 
 {
-return( *(int*)x1 - *(int*)x2 );              // если результат вычитания равен 0, то числа равны, < 0: x1 < x2; > 0: x1 > x2
+return( *(int*)x1 - *(int*)x2 );              // ГҐГ±Г«ГЁ Г°ГҐГ§ГіГ«ГјГІГ ГІ ГўГ»Г·ГЁГІГ Г­ГЁГї Г°Г ГўГҐГ­ 0, ГІГ® Г·ГЁГ±Г«Г  Г°Г ГўГ­Г», < 0: x1 < x2; > 0: x1 > x2
 }
 
 int main(void)
@@ -62,7 +62,7 @@ int main(void)
 	setvbuf(stdout, NULL, _IONBF, 0);
 	system("chcp 1251");
 	system("cls");
-	clock_t start, end; // объявляем переменные для определения времени выполнения
+	clock_t start, end; // Г®ГЎГєГїГўГ«ГїГҐГ¬ ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г»ГҐ Г¤Г«Гї Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­ГЁГї ГўГ°ГҐГ¬ГҐГ­ГЁ ГўГ»ГЇГ®Г«Г­ГҐГ­ГЁГї
 	clock_t start1, end1;
 	clock_t start2, end2;
 	clock_t start3, end3;
@@ -184,7 +184,7 @@ int main(void)
 
 
 	printf("|-----------------|-----------------|--------------|--------------|\n");
-	printf("|       ранд      |     возраст.    |     убыв.    |     труег.   |\n");
+	printf("|       Г°Г Г­Г¤      |     ГўГ®Г§Г°Г Г±ГІ.    |     ГіГЎГ»Гў.    |     ГІГ°ГіГҐГЈ.   |\n");
 	printf("|-----------------|-----------------|--------------|--------------|\n");
 	printf("|shel |  %f |   %f      |  %f    |    %f  |\n", search_time, search1_time, search2_time, search8_time);
 	printf("| qs  |  %f |   %f      |  %f    |    %f  |\n", search4_time, search5_time, search6_time, search7_time);
